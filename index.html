@@ -1,12 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <title>aaron-xyz | Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <!-- FONTS -->
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
-
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ"
+        crossorigin="anonymous"></script>
     <!-- BOOTSTRAP -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
@@ -44,10 +48,10 @@
                     <a class="nav-link" href="#">About</a>
                 </li>
                 <li>
-                    <a class="nav-link" href="#">Projects</a>
+                    <a class="nav-link" href="#projects">Projects</a>
                 </li>
                 <li>
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link" href="#footer">Contact</a>
                 </li>
             </ul>
         </div>
@@ -63,6 +67,116 @@
                 <span class="black-bg">1- navbar 2. coverpage 3. about me 4. projects 5. footer - contact</span>
             </p>
         </div>
+    </div>
+
+    <!-- Projects -->
+    <div class="container-fluid" id="projects">
+        <div class="projects">
+            <div class="description">
+                <h2>
+                    <span class="black-bg">General description of my projects</span>
+                </h2>
+                <p>
+                    Here are my projects related to Fullstack development, Data Science, and Scietific Computing. The next is a list of these projects with their respective links to its repositories and/or its own webpage.
+                </p>
+            </div>
+
+            <div class="project-list">
+                <h2>Frontend projects</h2>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md project-block">
+                            <img src="https://getuikit.com/v2/docs/images/placeholder_600x400.svg" alt="" class="thumbnail-img">
+                            <h4>Tribute page</h4>
+                        </div>
+                        <div class="col-md project-block">
+                            <img src="https://getuikit.com/v2/docs/images/placeholder_600x400.svg" alt="" class="thumbnail-img">
+                            <h4>Personal portfolio webpage</h4>
+                        </div>
+                        <div class="col-md project-block">
+                            <img src="https://getuikit.com/v2/docs/images/placeholder_600x400.svg" alt="" class="thumbnail-img">
+                            <h4>Random quote generator</h4>
+                        </div>
+                        <div class="col-md project-block">
+                            <img src="https://getuikit.com/v2/docs/images/placeholder_600x400.svg" alt="" class="thumbnail-img">
+                            <h4>Show the local weather</h4>
+                        </div>
+                        <div class="col-md project-block">
+                            <img src="https://getuikit.com/v2/docs/images/placeholder_600x400.svg" alt="" class="thumbnail-img">
+                            <h4>Wikipedia viewer</h4>
+                        </div>
+                        <div class="col-md project-block">
+                            <img src="https://getuikit.com/v2/docs/images/placeholder_600x400.svg" alt="" class="thumbnail-img">
+                            <h4>Twitch.tv JSON API</h4>
+                        </div>
+                        <div class="col-md project-block">
+                            <img src="https://getuikit.com/v2/docs/images/placeholder_600x400.svg" alt="" class="thumbnail-img">
+                            <h4>Javascript Calculator</h4>
+                        </div>
+                        <div class="col-md project-block">
+                            <img src="https://getuikit.com/v2/docs/images/placeholder_600x400.svg" alt="" class="thumbnail-img">
+                            <h4>Pomodoro clock</h4>
+                        </div>
+                        <div class="col-md project-block">
+                            <img src="https://getuikit.com/v2/docs/images/placeholder_600x400.svg" alt="" class="thumbnail-img">
+                            <h4>Tic Tac Toe Game</h4>
+                        </div>
+                        <div class="col-md project-block">
+                            <img src="https://getuikit.com/v2/docs/images/placeholder_600x400.svg" alt="" class="thumbnail-img">
+                            <h4>Simon Game</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="container-fluid" id="footer">
+        <footer>
+            <div class="row">
+                <!-- Form -->
+                <div class="col-lg contact-form">
+                    <form>
+                        <div class="form-group">
+                            <label for="InputEmail">Email address</label>
+                            <input type="email" class="form-control" id="InputEmail" aria-describedby="emailContact" placeholder="email: username@domain.com">
+                            <small id="emailContact" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="messageArea">Messagge</label>
+                            <textarea class="form-control" id="messageArea" rows="4" placeholder="Your message here"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send message</button>
+                    </form>
+                </div>
+                <!-- social -->
+                <div class="col-lg my-links">
+                    <ul>
+                        <li>
+                            <a href="https://twitter.com/AaronSupertramp" target="_blank">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/aaron-xyz/" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.freecodecamp.org/aaron-xyz" target="_blank">
+                                <i class="fab fa-free-code-camp"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://codepen.io/aaron-xyz/" target="_blank">
+                                <i class="fab fa-codepen"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
     </div>
 </body>
 

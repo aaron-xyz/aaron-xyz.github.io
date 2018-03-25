@@ -7,7 +7,7 @@ body {
     font-family: 'Roboto Mono', monospace;
 }
 .container {
-    margin: 0%;
+    margin: 0;
     padding: 0;
     width: 100%;
     background-color: #ddd;
@@ -16,6 +16,16 @@ body {
     padding: 0;
     height: 100%;
 }
+p, h1, h2, h3 {
+    margin: 0;
+}
+
+/** NAV **/
+nav {
+    width: 100%; /*get rid off that annoying blank vertical line*/
+}
+
+/** COVER **/
 .jumbotron-fluid {
     margin: 0;
     height: 100%;
@@ -28,7 +38,104 @@ body {
     background-size: cover;
     /*background-attachment: fixed; -- parallax effect*/
 }
+.jumbotron-fluid h1 {
+    padding: 40px;
+}
+.jumbotron-fluid p {
+    padding: 25px;
+}
 .black-bg {
-    background-color: rgba(0, 0, 0, 0.6);
-    color: greenyellow;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #ededed;
+}
+
+
+/** PROJECTS **/
+#projects {
+    height: auto;
+    background-color: whitesmoke;
+}
+-projects {
+    display: flex;
+    flex-direction: column;
+}
+.description {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.description p {
+    text-align: center;
+    padding: 40px 250px 40px 250px;
+}
+.project-list {
+    padding: 15px 25px 35px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.project-list h2 {
+    padding: 30px;
+}
+.project-block {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.thumbnail-img {
+    max-width: 250px;
+    padding-bottom: 20px;
+}
+
+/** FOOTER **/
+#footer {
+    height: auto; 
+    background-color: #020202;
+}
+footer {
+    margin: 0;
+    color: whitesmoke;
+}
+.contact-form {
+    padding: 90px;
+}
+footer ul {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-flow: row;
+}
+footer ul li {
+    padding-right: 20px; 
+    padding-left: 20px;
+}
+footer a {
+    color: white;
+    font-size: 30px;
+}
+footer a:hover {
+    color: #cdcdcd;
+}
+.my-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/**  REPONSIVE 1 **/
+@media (max-width: 790px) {
+    .container-fluid {
+        text-align: center;
+    }
+    h1, h2, h3, p {
+        line-height: 2;
+    }
 }
