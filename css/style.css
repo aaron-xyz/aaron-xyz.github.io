@@ -10,20 +10,31 @@ body {
     margin: 0;
     padding: 0;
     width: 100%;
-    background-color: #ddd;
 }
 .container-fluid {
     padding: 0;
     height: 100%;
 }
-p, h1, h2, h3 {
+h1, h2, h3, h4, h5, h6 {
     margin: 0;
+    font-family: 'Roboto Mono',  monospace;
+}
+p {
+    margin: 0;
+    font-family: 'IBM Plex Sans', serif;
+}
+.black-bg {
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #ededed;
 }
 
-/** NAV **/
-nav {
-    width: 100%; /*get rid off that annoying blank vertical line*/
+
+/** NAV **/ 
+#myNavBar {
+    width: 100%; /*get rid off that annoying blank vertical line */
 }
+
 
 /** COVER **/
 .jumbotron-fluid {
@@ -42,12 +53,20 @@ nav {
     padding: 40px;
 }
 .jumbotron-fluid p {
+    font-family: 'IBM Plex Mono', monospace;
     padding: 25px;
 }
-.black-bg {
+.cover-buttons {
+    display: flex;
+    justify-content: center;
+}
+.cover-buttons a {
     padding: 10px;
-    background-color: rgba(0, 0, 0, 0.9);
-    color: #ededed;
+    margin: 0px 10px 0px 10px;
+}
+.cover-buttons a .fa-github,
+.cover-buttons a .fa-code {
+    font-size: 30px;
 }
 
 
@@ -82,15 +101,24 @@ nav {
     padding: 30px;
 }
 .project-block {
-    padding: 25px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
+.project-block h4 {
+    /* position: absolute; */
+    padding-bottom: 10px;
+    font-size: 17px;
+}
+.project-block a:hover {
+    background-color: black;
+}
 .thumbnail-img {
-    max-width: 250px;
+    /*position: relative;*/
+    max-width: 200px;
     padding-bottom: 20px;
 }
 
@@ -98,6 +126,9 @@ nav {
 #footer {
     height: auto; 
     background-color: #020202;
+}
+#footer .row {
+    width: 100%;
 }
 footer {
     margin: 0;
@@ -130,6 +161,7 @@ footer a:hover {
 }
 
 
+
 /**  REPONSIVE 1 **/
 @media (max-width: 790px) {
     .container-fluid {
@@ -137,5 +169,8 @@ footer a:hover {
     }
     h1, h2, h3, p {
         line-height: 2;
+    }
+    .description p {
+        padding: 10px;
     }
 }
