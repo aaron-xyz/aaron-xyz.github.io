@@ -118,7 +118,7 @@ p {
 }
 .thumbnail-img {
     /*position: relative;*/
-    max-width: 200px;
+    max-width: 250px;
     padding-bottom: 20px;
 }
 
@@ -129,6 +129,11 @@ p {
 }
 #footer .row {
     width: 100%;
+}
+#footer .row .col-lg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 footer {
     margin: 0;
@@ -150,6 +155,14 @@ footer ul li {
 footer a {
     color: white;
     font-size: 30px;
+}
+footer .contact-form a,
+footer .contact-form p {
+    font-family: 'IBM Plex Mono', Courier;
+    font-size: 1em;
+}
+footer .contact-form a {
+    font-weight: bold;
 }
 footer a:hover {
     color: #cdcdcd;
