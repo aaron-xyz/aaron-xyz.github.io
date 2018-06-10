@@ -45,7 +45,7 @@ p {
     align-items: center;
     justify-content: center; /*flex-start;*/
     flex-direction: column;
-    background-image: url(../imgs/u.jpg);
+    background-image: url(../imgs/citynight.jpeg);
     background-size: cover;
     /*background-attachment: fixed; -- parallax effect*/
 }
@@ -80,6 +80,8 @@ p {
     flex-direction: column;
 }
 .description {
+    background-color: #202334;
+    color: whitesmoke;
     padding: 50px;
     display: flex;
     flex-direction: column;
@@ -119,13 +121,14 @@ p {
 .thumbnail-img {
     /*position: relative;*/
     max-width: 250px;
+    height: 190px;
     padding-bottom: 20px;
 }
 
 /** FOOTER **/
 #footer {
     height: auto; 
-    background-color: #020202;
+    background-color: #202334;
 }
 #footer .row {
     width: 100%;
